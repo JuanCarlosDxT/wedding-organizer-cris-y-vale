@@ -7,6 +7,11 @@ body {
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Pantalla principal */
 .hero {
     height: 100vh;
@@ -246,6 +251,8 @@ nav ul {
     overflow-x: auto;
 
     white-space: nowrap;
+    flex: 1;
+    min-width: 0;
 }
 
 nav a {
