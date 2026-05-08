@@ -204,19 +204,43 @@ tr:hover {
 
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
+   nav {
 
-        padding: 15px;
-    }
+    padding: 10px 15px;
 
-    nav ul {
-        flex-direction: column;
+    flex-direction: row;
 
-        gap: 10px;
+    justify-content: space-between;
 
-        padding: 0;
-    }
+    align-items: center;
+}
+
+nav ul {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 12px;
+
+    padding: 0;
+
+    margin: 0;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+
+    font-size: 0.9rem;
+}
+
+nav h2 {
+
+    font-size: 1.3rem;
+
+    margin-right: 15px;
+}
 
     .hero h1 {
         font-size: 2.5rem;
