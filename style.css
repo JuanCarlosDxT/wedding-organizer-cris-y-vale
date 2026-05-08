@@ -183,6 +183,7 @@ nav a:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 
     transition: 0.3s;
+    overflow-x: auto;
 }
 
 .card:hover {
@@ -199,6 +200,8 @@ table {
     border-collapse: collapse;
 
     margin-top: 20px;
+    overflow-x: auto;
+    min-width: 600px;
 }
 
 th {
