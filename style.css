@@ -104,10 +104,24 @@ nav h2 {
 }
 
 nav ul {
+
     display: flex;
+
     gap: 20px;
 
     list-style: none;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+    
+}
+
+nav ul::-webkit-scrollbar {
+
+    display: none;
 }
 
 nav a {
@@ -227,7 +241,11 @@ nav ul {
 
     margin: 0;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
 }
 
 nav a {
