@@ -85,17 +85,14 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    padding: 15px 20px;
+    padding: 15px 25px;
     background-color: rgba(0,0,0,0.7);
     z-index: 1000;
-
-    box-sizing: border-box;
 }
 
 /* Título */
@@ -105,8 +102,9 @@ nav h2 {
     letter-spacing: 3px;
     font-weight: bold;
 
-    flex-shrink: 0; /* CLAVE */
     margin: 0;
+    margin-right: 30px; /* pequeño espacio */
+    flex-shrink: 0;
 }
 
 nav ul {
@@ -117,10 +115,7 @@ nav ul {
     margin: 0;
     padding: 0;
 
-    flex: 1;              /* CLAVE */
-    justify-content: flex-end;
-
-    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 nav ul::-webkit-scrollbar {
