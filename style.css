@@ -309,7 +309,7 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
-/* BOTÓN DE MÚSICA */
+/* BOTÓN DE AUDIO PREMIUM */
 
 #music-btn {
 
@@ -319,30 +319,41 @@ input[type="checkbox"] {
 
     right: 20px;
 
-    width: 60px;
+    width: 70px;
 
-    height: 60px;
+    height: 70px;
 
     border: none;
 
     border-radius: 50%;
 
-    background-color: #d4a373;
+    background: linear-gradient(135deg, #d4a373, #b5835a);
 
     color: white;
 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     cursor: pointer;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
 
-    z-index: 2000;
+    align-items: center;
 
-    transition: 0.3s;
+    justify-content: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    z-index: 3000;
+
+    transition: all 0.3s ease;
 }
 
 #music-btn:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.08);
+}
+
+#music-btn:active {
+
+    transform: scale(0.95);
 }

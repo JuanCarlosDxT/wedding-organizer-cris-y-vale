@@ -92,7 +92,7 @@ musicBtn.addEventListener('click', (event) => {
 
         music.play();
 
-        document.getElementById('music-icon').textContent = '🔊';
+        document.getElementById('music-icon').className = 'fa-solid fa-volume-high';
 
     } else {
 
@@ -100,7 +100,7 @@ musicBtn.addEventListener('click', (event) => {
 
         music.pause();
 
-        document.getElementById('music-icon').textContent = '🔇';
+        document.getElementById('music-icon').className = 'fa-solid fa-volume-xmark';
 
     }
 
