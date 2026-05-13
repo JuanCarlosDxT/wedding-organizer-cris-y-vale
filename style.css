@@ -357,3 +357,43 @@ input[type="checkbox"] {
 
     transform: scale(0.95);
 }
+
+/* CONTENEDOR TABLAS */
+
+.table-container {
+
+    width: 100%;
+}
+
+/* SCROLL SUPERIOR */
+
+.table-scroll-top {
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    height: 20px;
+}
+
+.table-scroll-top div {
+
+    width: 1200px;
+
+    height: 1px;
+}
+
+/* TABLA */
+
+.table-scroll {
+
+    overflow-x: auto;
+}
+
+/* SINCRONIZAR SCROLL */
+
+.table-scroll-top::-webkit-scrollbar,
+.table-scroll::-webkit-scrollbar {
+
+    height: 10px;
+}

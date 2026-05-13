@@ -105,3 +105,22 @@ musicBtn.addEventListener('click', (event) => {
     }
 
 });
+
+// SINCRONIZAR SCROLL SUPERIOR E INFERIOR
+
+const topScrolls = document.querySelectorAll('.table-scroll-top');
+
+topScrolls.forEach(top => {
+
+    const bottom = top.nextElementSibling;
+
+    top.addEventListener('scroll', () => {
+
+        bottom.scrollLeft = top.scrollLeft;
+    });
+
+    bottom.addEventListener('scroll', () => {
+
+        top.scrollLeft = bottom.scrollLeft;
+    });
+});
