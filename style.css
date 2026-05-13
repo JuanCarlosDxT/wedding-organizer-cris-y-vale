@@ -62,28 +62,6 @@ h3 {
     text-transform: uppercase;
 }
 
-/* Botón */
-.hero button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-
-    border: none;
-    border-radius: 10px;
-
-    background-color: #d4a373;
-    color: white;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-/* Efecto hover */
-.hero button:hover {
-    background-color: #b5835a;
-}
-
 /* MENU */
 
 nav {

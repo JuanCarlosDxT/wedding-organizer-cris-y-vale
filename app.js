@@ -82,7 +82,9 @@ document.addEventListener('click', () => {
 
 // BOTÓN AUDIO
 
-musicBtn.addEventListener('click', () => {
+musicBtn.addEventListener('click', (event) => {
+
+    event.stopPropagation();
 
     if (music.paused) {
 
@@ -95,26 +97,6 @@ musicBtn.addEventListener('click', () => {
     } else {
 
         userPaused = true;
-
-        music.pause();
-
-        musicBtn.textContent = '🔇';
-
-    }
-
-});
-
-// Botón activar/desactivar
-
-musicBtn.addEventListener('click', () => {
-
-    if (music.paused) {
-
-        music.play();
-
-        musicBtn.textContent = '🔊';
-
-    } else {
 
         music.pause();
 
