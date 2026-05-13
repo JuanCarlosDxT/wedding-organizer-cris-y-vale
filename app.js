@@ -31,3 +31,86 @@ sections.forEach(section => {
 });
 
 document.getElementById('inicio').style.display = 'flex';
+
+// MÚSICA
+
+const music = document.getElementById('bg-music');
+
+const musicBtn = document.getElementById('music-btn');
+
+// Intentar autoplay
+
+function playMusic() {
+
+    music.play()
+
+    .then(() => {
+
+        console.log('Música reproduciéndose');
+
+    })
+
+    .catch(() => {
+
+        console.log('Autoplay bloqueado');
+
+    });
+}
+
+// Intentar al cargar
+
+window.addEventListener('load', () => {
+
+    playMusic();
+});
+
+// Intentar cuando usuario toque pantalla
+
+document.addEventListener('click', () => {
+
+    if (music.paused) {
+
+        playMusic();
+    }
+
+}, { once: true });
+
+// Botón audio
+
+musicBtn.addEventListener('click', () => {
+
+    if (music.paused) {
+
+        music.play();
+
+        musicBtn.textContent = '🔊';
+
+    } else {
+
+        music.pause();
+
+        musicBtn.textContent = '🔇';
+
+    }
+
+});
+
+// Botón activar/desactivar
+
+musicBtn.addEventListener('click', () => {
+
+    if (music.paused) {
+
+        music.play();
+
+        musicBtn.textContent = '🔊';
+
+    } else {
+
+        music.pause();
+
+        musicBtn.textContent = '🔇';
+
+    }
+
+});

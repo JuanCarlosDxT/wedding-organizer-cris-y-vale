@@ -27,7 +27,7 @@ html, body {
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
     ),
-    url('img/recien_casados.jpg');
+    url('img/recien_casados.png');
 
     background-size: cover;
     background-position: center;
@@ -329,4 +329,42 @@ input[type="checkbox"] {
     color: #d4a373;
 
     font-weight: bold;
+}
+
+/* BOTÓN DE MÚSICA */
+
+#music-btn {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #d4a373;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    z-index: 2000;
+
+    transition: 0.3s;
+}
+
+#music-btn:hover {
+
+    transform: scale(1.1);
 }
