@@ -92,7 +92,7 @@ musicBtn.addEventListener('click', (event) => {
 
         music.play();
 
-        musicBtn.textContent = '🔊';
+        document.getElementById('music-icon').textContent = '🔊';
 
     } else {
 
@@ -100,7 +100,7 @@ musicBtn.addEventListener('click', (event) => {
 
         music.pause();
 
-        musicBtn.textContent = '🔇';
+        document.getElementById('music-icon').textContent = '🔇';
 
     }
 
