@@ -38,26 +38,31 @@ const music = document.getElementById('bg-music');
 
 const musicBtn = document.getElementById('music-btn');
 
-// Intentar autoplay
+let userPaused = false;
+
+// Función reproducir
 
 function playMusic() {
 
-    music.play()
+    if (!userPaused) {
 
-    .then(() => {
+        music.play()
 
-        console.log('Música reproduciéndose');
+        .then(() => {
 
-    })
+            console.log('Música reproduciéndose');
 
-    .catch(() => {
+        })
 
-        console.log('Autoplay bloqueado');
+        .catch(() => {
 
-    });
+            console.log('Autoplay bloqueado');
+
+        });
+    }
 }
 
-// Intentar al cargar
+// Intentar autoplay al cargar
 
 window.addEventListener('load', () => {
 
@@ -68,24 +73,28 @@ window.addEventListener('load', () => {
 
 document.addEventListener('click', () => {
 
-    if (music.paused) {
+    if (music.paused && !userPaused) {
 
         playMusic();
     }
 
 }, { once: true });
 
-// Botón audio
+// BOTÓN AUDIO
 
 musicBtn.addEventListener('click', () => {
 
     if (music.paused) {
+
+        userPaused = false;
 
         music.play();
 
         musicBtn.textContent = '🔊';
 
     } else {
+
+        userPaused = true;
 
         music.pause();
 
