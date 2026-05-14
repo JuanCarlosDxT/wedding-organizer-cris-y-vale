@@ -363,6 +363,8 @@ input[type="checkbox"] {
 .table-container {
 
     width: 100%;
+
+    position: relative;
 }
 
 /* SCROLL SUPERIOR */
@@ -375,32 +377,40 @@ input[type="checkbox"] {
 
     height: 14px;
 
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
+
+/* BARRA FALSA SUPERIOR */
 
 .table-scroll-top div {
 
-    width: 1200px;
-
     height: 1px;
+
+    min-width: 1200px;
 }
 
-/* TABLA */
+/* SCROLL TABLA */
 
 .table-scroll {
 
     overflow-x: auto;
+
+    width: 100%;
 }
 
-/* SINCRONIZAR SCROLL */
+/* TABLA */
+
+.wide-table {
+
+    min-width: 1200px;
+
+    border-collapse: collapse;
+}
+
+/* SCROLL VISIBLE */
 
 .table-scroll-top::-webkit-scrollbar,
 .table-scroll::-webkit-scrollbar {
 
     height: 10px;
-}
-
-.wide-table {
-
-    min-width: 900px;
 }
