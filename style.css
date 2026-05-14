@@ -373,7 +373,9 @@ input[type="checkbox"] {
 
     overflow-y: hidden;
 
-    height: 20px;
+    height: 14px;
+
+    margin-bottom: 5px;
 }
 
 .table-scroll-top div {
@@ -396,4 +398,9 @@ input[type="checkbox"] {
 .table-scroll::-webkit-scrollbar {
 
     height: 10px;
+}
+
+.wide-table {
+
+    min-width: 900px;
 }
