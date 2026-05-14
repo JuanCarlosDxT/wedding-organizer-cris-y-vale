@@ -414,3 +414,28 @@ input[type="checkbox"] {
 
     height: 10px;
 }
+
+/* INDICADOR SCROLL */
+
+.scroll-indicator {
+
+    display: none;
+
+    font-size: 0.9rem;
+
+    color: #777;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+}
+
+/* SOLO EN MÓVIL */
+
+@media (max-width: 768px) {
+
+    .scroll-indicator {
+
+        display: block;
+    }
+}
