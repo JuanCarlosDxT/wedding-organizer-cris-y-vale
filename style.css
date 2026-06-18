@@ -206,6 +206,18 @@ tr:hover {
     background-color: #f5ebe0;
 }
 
+/* ORGANIZACIÓN Y RESPONSABILIDADES */
+
+#organizacion table th:first-child,
+#organizacion table td:first-child {
+    width: 35%;
+}
+
+#organizacion table th:last-child,
+#organizacion table td:last-child {
+    width: 65%;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
