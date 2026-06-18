@@ -210,12 +210,38 @@ tr:hover {
 
 #organizacion table th:first-child,
 #organizacion table td:first-child {
-    width: 35%;
+    width: 15%;
 }
 
 #organizacion table th:last-child,
 #organizacion table td:last-child {
-    width: 65%;
+    width: 45%;
+}
+
+/* PROGRAMA DEL EVENTO */
+
+#programa table {
+    table-layout: fixed;
+}
+
+#programa table th:nth-child(1),
+#programa table td:nth-child(1) {
+    width: 0.5%;
+}
+
+#programa table th:nth-child(2),
+#programa table td:nth-child(2) {
+    width: 1%;
+}
+
+#programa table th:nth-child(3),
+#programa table td:nth-child(3) {
+    width: 5%;
+}
+
+#programa table th:nth-child(4),
+#programa table td:nth-child(4) {
+    width: 5%;
 }
 
 /* RESPONSIVE */
