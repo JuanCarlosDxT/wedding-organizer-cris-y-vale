@@ -185,7 +185,7 @@ table {
 
     margin-top: 20px;
     overflow-x: auto;
-    min-width: 600px;
+    /*min-width: 600px;*/
 }
 
 th {
@@ -210,12 +210,12 @@ tr:hover {
 
 #organizacion table th:first-child,
 #organizacion table td:first-child {
-    width: 15%;
+    width: 0.5%;
 }
 
 #organizacion table th:last-child,
 #organizacion table td:last-child {
-    width: 45%;
+    width: 2%;
 }
 
 /* PROGRAMA DEL EVENTO */
