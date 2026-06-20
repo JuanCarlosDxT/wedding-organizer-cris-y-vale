@@ -171,3 +171,5 @@ buscador.addEventListener("keydown", function(event) {
     }
 
 });
+
+btnBuscar.addEventListener("click", buscarInvitados);
