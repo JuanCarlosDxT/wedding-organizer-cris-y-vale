@@ -512,3 +512,57 @@ input[type="checkbox"] {
 
     border-color: #8b5e83;
 }
+
+/*ICONO DE LUPA DEL BUSCADOR*/
+
+.search-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.search-container input {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px 15px;
+
+    border: 2px solid #d4a373;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+}
+
+.search-container button {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #d4a373;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1.1rem;
+
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+
+    background-color: #b5835a;
+}

@@ -128,8 +128,9 @@ topScrolls.forEach(top => {
 //BUSCADOR
 
 const buscador = document.getElementById("buscarInvitado");
+const btnBuscar = document.getElementById("btnBuscar");
 
-buscador.addEventListener("keyup", () => {
+function buscarInvitados() {
 
     const texto = buscador.value.toLowerCase();
 
@@ -137,17 +138,38 @@ buscador.addEventListener("keyup", () => {
 
     filas.forEach((fila, index) => {
 
-        if(index === 0) return; // encabezado
+        // Saltar encabezado
+        if (index === 0) return;
 
         const nombre = fila.cells[2].textContent.toLowerCase();
 
-        if(nombre.includes(texto)) {
+        if (nombre.includes(texto)) {
 
             fila.style.display = "";
 
         } else {
 
             fila.style.display = "none";
+
         }
+
     });
+
+}
+
+// Buscar mientras se escribe
+buscador.addEventListener("keyup", buscarInvitados);
+
+// Buscar al hacer clic en la lupa
+btnBuscar.addEventListener("click", buscarInvitados);
+
+// Buscar al presionar Enter
+buscador.addEventListener("keypress", function(event) {
+
+    if (event.key === "Enter") {
+
+        buscarInvitados();
+
+    }
+
 });
