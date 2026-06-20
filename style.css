@@ -481,84 +481,46 @@ input[type="checkbox"] {
 /*BUSCADOR*/
 
 .search-container {
-
     margin-bottom: 20px;
-
     width: 100%;
-
     display: flex;
-
     justify-content: center;
+    align-items: stretch;
+    gap: 10px;
 }
 
 .search-container input {
-
     width: 100%;
-
     max-width: 500px;
-
     padding: 12px 15px;
-
     border: 2px solid #d4a373;
-
     border-radius: 10px;
-
     font-size: 1rem;
-
     outline: none;
+    height: 45px;
 }
 
 .search-container input:focus {
-
     border-color: #8b5e83;
 }
-
 /*ICONO DE LUPA DEL BUSCADOR*/
-
-.search-container {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-bottom: 20px;
-}
-
-.search-container input {
-
-    width: 100%;
-
-    max-width: 500px;
-
-    padding: 12px 15px;
-
-    border: 2px solid #d4a373;
-
-    border-radius: 10px;
-
-    font-size: 1rem;
-}
-
-/*CONFIGURACION PARA LUPA MINIMALISTA*/
 .search-container button {
     background: transparent;
     border: none;
-    width: 45px;
-    height: 45px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60px;
+    height: 45px;
 }
 
+/* ICONO */
 .search-container button img {
-    width: 22px;
-    height: 22px;
-    opacity: 0.8;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    opacity: 0.85;
     transition: 0.2s;
 }
 
