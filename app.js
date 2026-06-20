@@ -128,6 +128,7 @@ topScrolls.forEach(top => {
 //BUSCADOR
 
 const buscador = document.getElementById("buscarInvitado");
+
 const btnBuscar = document.getElementById("btnBuscar");
 
 function buscarInvitados() {
@@ -172,4 +173,7 @@ buscador.addEventListener("keydown", function(event) {
 
 });
 
+//Buscar cuando se presione el botón del ícono de lupa
 btnBuscar.addEventListener("click", buscarInvitados);
+//Buscar automáticamente mientras se escribe
+buscador.addEventListener("input", buscarInvitados);

@@ -526,8 +526,15 @@ input[type="checkbox"] {
     transition: 0.2s;
 }
 
+/*HOVER ICONO*/
 .search-container button:hover img {
     opacity: 1;
     transform: scale(1.05);
-    background-color: rgba(212, 163, 115, 0.15);
 }
+
+/*HOVER BOTÓN*/
+.search-container button:hover {
+    background-color: rgba(212, 163, 115, 0.2);
+    transform: scale(1.03);
+}
+
