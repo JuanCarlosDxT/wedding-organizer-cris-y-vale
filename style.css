@@ -505,7 +505,7 @@ input[type="checkbox"] {
 }
 /*ICONO DE LUPA DEL BUSCADOR*/
 .search-container button {
-    background: transparent;
+    background: #d4a373;
     border: none;
     cursor: pointer;
     display: flex;
@@ -513,6 +513,8 @@ input[type="checkbox"] {
     justify-content: center;
     width: 60px;
     height: 45px;
+    border-radius: 10px;
+    transition: 0.2s;
 }
 
 /* ICONO */
@@ -527,4 +529,5 @@ input[type="checkbox"] {
 .search-container button:hover img {
     opacity: 1;
     transform: scale(1.05);
+    background-color: rgba(212, 163, 115, 0.15);
 }
