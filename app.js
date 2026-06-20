@@ -158,17 +158,15 @@ function buscarInvitados() {
 }
 
 // Buscar mientras se escribe
-buscador.addEventListener("keyup", buscarInvitados);
-
-// Buscar al hacer clic en la lupa
-btnBuscar.addEventListener("click", buscarInvitados);
-
-// Buscar al presionar Enter
-buscador.addEventListener("keypress", function(event) {
+buscador.addEventListener("keydown", function(event) {
 
     if (event.key === "Enter") {
 
+        event.preventDefault();
+
         buscarInvitados();
+
+        buscador.blur();
 
     }
 
