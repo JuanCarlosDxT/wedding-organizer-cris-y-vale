@@ -477,3 +477,38 @@ input[type="checkbox"] {
         display: block;
     }
 }
+
+/*BUSCADOR*/
+
+.search-container {
+
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.search-container input {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px 15px;
+
+    border: 2px solid #d4a373;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+.search-container input:focus {
+
+    border-color: #8b5e83;
+}

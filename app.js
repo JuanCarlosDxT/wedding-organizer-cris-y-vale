@@ -124,3 +124,30 @@ topScrolls.forEach(top => {
         top.scrollLeft = bottom.scrollLeft;
     });
 });
+
+//BUSCADOR
+
+const buscador = document.getElementById("buscarInvitado");
+
+buscador.addEventListener("keyup", () => {
+
+    const texto = buscador.value.toLowerCase();
+
+    const filas = document.querySelectorAll("#invitados table tr");
+
+    filas.forEach((fila, index) => {
+
+        if(index === 0) return; // encabezado
+
+        const nombre = fila.cells[2].textContent.toLowerCase();
+
+        if(nombre.includes(texto)) {
+
+            fila.style.display = "";
+
+        } else {
+
+            fila.style.display = "none";
+        }
+    });
+});
